@@ -1,0 +1,125 @@
+/* Section: Showcase */
+
+.showcase {
+    padding: 1rem;
+    min-height: 50vh;
+}
+
+.showcase header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase header h2 {
+    font-size: 2rem;
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 40px;
+    background-size: 1.5rem;
+}
+
+.nav-menu-close {
+    width: 40px;
+    height: 40px;
+    background-size: 1.5rem;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+}
+
+.social {
+    justify-content: center;
+}
+
+/* Nav */
+
+.menu ul li a {
+    font-size: 1.5rem;
+}
+
+/* Section: Features */
+
+.our-feature {
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.our-feature img {
+    width: 25rem;
+    margin: 0.7rem 0;
+}
+
+.details {
+    text-align: center;
+}
+
+.details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.details p {
+    font-size: 1.3rem;
+}
+
+.feature-2 .details,
+.feature-4 .details 
+{
+    order: 2;
+}
+
+.feature-2 img,
+.feature-4 img
+{
+    order: 1;
+}
+
+/* Section: About Us */
+
+.about-us {
+    padding: 1.5rem;
+    flex-direction: column;
+}
+
+.about-us img {
+    width: 20rem;
+}
+
+.about-us img, 
+.about-us .about-us-details {
+    padding: 1rem 0;
+}
+
+.about-us-details {
+    text-align: center;
+}
+
+.about-us .about-us-details h3 {
+    font-size: 1.5rem;
+}
+
+.about-us .about-us-details p {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+/* Section: Contact Us */
+
+.contact-us {
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-us header {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+}

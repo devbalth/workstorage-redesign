@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Section: Showcase */
+
+.showcase {
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s ease;
+    z-index: 2;
+}
+
+.showcase.active {
+    right: 100%;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.showcase .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Section: Showcase - Header */
+
+.showcase header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase header h2 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.menu-toggle {
+    background: url('../resource/img/menu.png');
+    background-size: 2rem;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.nav-menu-close {
+    background: url('../resource/img/close.png');
+    background-size: 2rem;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.nav-menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+}
+
+
+/* Section: Showcase - Text */
+
+.text {
+    width: 55%;
+    font-weight: 500;
+}
+
+.text h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.text p {
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+.text a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #374045;
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+    display: inline-block;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    transition: 1s ease;
+}
+
+.text a:hover {
+    letter-spacing: 0.2rem;
+}
+
+/* Section: Showcase - Social Media */
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+
+.social img {
+    width: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
+/* Menu Nav */
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #374045;
+    z-index: 2;
+    transition: 1s ease;
+}
+
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+    transition: 0.8s ease;
+}
+
+.menu ul li a:hover {
+    background: #ffffff;
+    color: #000000;    
+}
+
+.nav-toggle {
+    transform: translateX(100%);
+}
+
+/* Section: Features */
+
+.features {
+    color: #000000;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.our-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.our-feature img {
+    width: 85rem;
+    margin: 0 1rem;
+}
+
+.details h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 1.2rem 0;
+    color: #374045;
+}
+
+.details p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.details button
+{
+    background-color: #e1d89f;
+    color: #000000;
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.details button:hover
+{
+    background-color: #d89216;
+    color: #ffffff;
+}
+
+/* Section: About-Us */
+
+.about-us {
+    background-color: rgba(225,216,159, 0.4);
+    width: 92%;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    padding: 3rem;
+    color: #374045;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us img, 
+.about-us .about-us-details {
+    flex: 1 1 50%;
+    padding: 0 1.5rem;
+}
+
+.about-us .about-us-details h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1.2rem 0;
+    color: #374045;
+}
+
+.about-us .about-us-details p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/* Section: Contact Us */
+
+.contact-us {
+    width: 92%;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #374045;
+}
+
+.contact-us header {
+    flex-basis: 30%;
+}
+
+.contact-us h3 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.contact-us button {
+    background-color: #e1d89f;
+    color: #000000;
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.contact-us button:hover
+{
+    background-color: #374045;
+    color: #e1d89f;
+}
+
+.contact-us .contact-sales {
+    background-color: #d89216;
+    color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #000000;
+    margin: 2rem 0;
+}
